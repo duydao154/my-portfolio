@@ -45,8 +45,6 @@ const projectData: Project[] = [
   },
 ];
 
-console.log(projectData.slice(0, 2));
-
 const Work = () => {
   return (
     <section className="relative mb-12 xl:mb-48 ">

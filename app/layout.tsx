@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { ToasterProvider } from "@/providers/toast-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col min-h-[100vh]">
           <ThemeProvider attribute="class" defaultTheme="light">
+            <ToasterProvider />
             <Header />
             {children}
             <Footer />

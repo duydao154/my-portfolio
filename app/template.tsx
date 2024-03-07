@@ -11,7 +11,6 @@ interface TemplateProps {
 
 const Template: React.FC<TemplateProps> = ({ children }) => {
   const completion: any = useScrollProgress();
-  console.log(completion);
 
   const variants = {
     hidden: { opacity: 0 },

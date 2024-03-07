@@ -13,6 +13,7 @@ import { User, MailIcon, ArrowRightIcon, MessageSquare } from "lucide-react";
 
 import * as z from "zod";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(1),
@@ -24,7 +25,6 @@ type ContactFormValues = z.infer<typeof formSchema>;
 
 const ContactForm = () => {
   const router = useRouter();
-
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -37,6 +37,7 @@ const ContactForm = () => {
   const onSubmit = async (data: ContactFormValues) => {
     try {
       await axios.post(`/api/contact/`, data);
+      router.push("/");
       router.refresh();
       toast.success("Email sended updated.");
     } catch (error: any) {
