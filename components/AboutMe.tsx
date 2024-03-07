@@ -49,7 +49,7 @@ const qualificationData = [
         years: "2015 - 2019",
       },
       {
-        university: "university Duisburg-Essen",
+        university: "University Duisburg-Essen",
         qualification: "Bachlor of Science",
         years: "2019 - now",
       },
@@ -76,9 +76,9 @@ const skillsData = [
   {
     title: "skills",
     data: [
-      { name: "HTML,CSS" },
+      { name: "HTML, CSS" },
       { name: "Front-end Development: Angular, Vuejs, React" },
-      { name: "Java,Javascript, Typescript" },
+      { name: "Java, Javascript, Typescript" },
       { name: "Back-end Development: nodejs, nextjs" },
     ],
   },
