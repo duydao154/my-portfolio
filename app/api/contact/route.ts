@@ -1,5 +1,6 @@
 import { log } from "console";
 import { NextResponse, NextRequest } from "next/server";
+import { resolve } from "path";
 const nodemailer = require("nodemailer");
 
 // Handles POST requests to /api
@@ -24,6 +25,19 @@ export async function POST(req: Request) {
       },
     });
 
+    await new Promise((resolve, reject) => {
+      // verify connection configuration
+      transporter.verify(function (error: any, success: any) {
+        if (error) {
+          console.log(error);
+          reject(error);
+        } else {
+          console.log("Server is ready to take our messages");
+          resolve(success);
+        }
+      });
+    });
+
     const mailOptions = {
       from: email,
       to: "duydao1504@gmail.com",
@@ -31,15 +45,20 @@ export async function POST(req: Request) {
       text: message,
     };
 
-    await transporter.sendMail(mailOptions, function (error: any, info: any) {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("Email sent: " + info.response);
-        // do something useful
-      }
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailOptions, function (error: any, info: any) {
+        if (error) {
+          console.log(error);
+          reject(error);
+        } else {
+          console.log("Email sent: " + info.response);
+          resolve(info);
+          // do something useful
+        }
+      });
     });
-    return NextResponse.json("EMAIL SEND SUCCESSFULLY");
+
+    return NextResponse.json("EMAIL SEND SUCCESSFULLY", { status: 200 });
   } catch (error) {
     console.log("EMAIL_SERVICE", error);
     return new NextResponse("Internal error", { status: 500 });
