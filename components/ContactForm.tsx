@@ -25,6 +25,7 @@ type ContactFormValues = z.infer<typeof formSchema>;
 
 const ContactForm = () => {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -36,12 +37,15 @@ const ContactForm = () => {
 
   const onSubmit = async (data: ContactFormValues) => {
     try {
+      setLoading(true);
       await axios.post(`/api/contact/`, data);
       router.push("/");
       router.refresh();
-      toast.success("Email sended updated.");
+      toast.success("Email sended successfully.");
     } catch (error: any) {
       toast.error("Something went wrong.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -80,6 +84,7 @@ const ContactForm = () => {
         variant="default"
         className="bg-red-400 rounded-full flex items-center max-w-[166px] dark:bg-red-400"
         type="submit"
+        disabled={loading}
       >
         Lets talk
         <ArrowRightIcon size={20} />

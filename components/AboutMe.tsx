@@ -124,10 +124,12 @@ const AboutMe2 = () => {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </h3>
                     <p className="max-w-xl mx-auto xl:mx-0">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Quae nam quasi unde asperiores tempore obcaecati sequi,
-                      iure corrupti optio dolore voluptatum libero quos ex velit
-                      accusamus repellat est saepe reprehenderit?
+                      My fascination with technology isn&apos;t just about
+                      writing code; it&apos;s about leveraging it as a powerful
+                      tool to empower others. I envision using my skills to
+                      create platforms and applications that enable individuals
+                      and organizations to connect with the world in meaningful
+                      ways
                     </p>
                     <div className="grid xl:grid-cols-2 gap-4 mb-12 mt-4">
                       {infoData.map((item, index) => (

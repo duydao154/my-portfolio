@@ -12,10 +12,11 @@ const HeroSection = () => {
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:ml-0 xl:text-left gap-y-7 ">
             <h1 className="h1">Hello I&apos;m Duy</h1>
             <p className="text-primary text-sm uppercase font-semibold lg:text-xl sm:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              fugit obcaecati perferendis, animi amet rerum, sequi, sit nobis
-              quidem at nesciunt ea distinctio ad enim temporibus suscipit rem
-              labore autem!
+              I&apos;m a dedicated university student with a deep-seated passion
+              for web and software development. Throughout my academic journey,
+              I&apos;ve delved into the intricacies of programming languages,
+              design principles, and emerging technologies, driven by a desire
+              to make a meaningful impact.
             </p>
             <div className="flex items-start gap-x-3 xl:mx-0 mb-12">
               <Link href="/contact">

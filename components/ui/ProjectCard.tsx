@@ -26,12 +26,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             priority
           />
           <div className="flex gap-x-5">
-            <Link target="_blank" href={project.link}>
-              <Link2Icon className="bg-slate-950 w-[45px] h-[45px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 text-white " />
-            </Link>
-            <Link target="_blank" href={project.github}>
-              <Github className="bg-slate-950 w-[45px] h-[45px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 text-white " />
-            </Link>
+            {project.link !== "" && (
+              <Link target="_blank" href={project.link}>
+                <Link2Icon className="bg-slate-950 w-[45px] h-[45px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 text-white " />
+              </Link>
+            )}
+            {project.github !== "" && (
+              <Link target="_blank" href={project.github}>
+                <Github className="bg-slate-950 w-[45px] h-[45px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 text-white " />
+              </Link>
+            )}
           </div>
         </div>
       </CardHeader>

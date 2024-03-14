@@ -27,21 +27,21 @@ const projectData: Project[] = [
   },
   {
     image: "/work/4.png",
-    category: "reactjs",
+    category: "DEMO",
     name: "Some name web",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis impedit laudantium eligendi sed commodi hic. Rem ipsam porro repellat corrupti. Rerum impedit ad veritatis blanditiis beatae. Expedita magni illum rerum.",
-    link: "/",
-    github: "/",
+    link: "",
+    github: "",
   },
   {
     image: "/work/1.png",
-    category: "fullstack",
+    category: "DEMO",
     name: "Some name web",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis impedit laudantium eligendi sed commodi hic. Rem ipsam porro repellat corrupti. Rerum impedit ad veritatis blanditiis beatae. Expedita magni illum rerum.",
-    link: "/",
-    github: "/",
+    link: "",
+    github: "",
   },
 ];
 

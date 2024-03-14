@@ -42,8 +42,28 @@ export async function POST(req: Request) {
       text: message,
     };
 
+    const thanksMail = {
+      from: "duydao1504@gmail.com",
+      to: email,
+      subject: `Thanks for visisting my portfolio `,
+      text: `Hi ${name} Im Duy, \n Your interest in my portfolio website means a lot! I appreciate you taking the time to explore my work. I'll be sure to reach out to you soon. Stay tuned for further updates. Looking forward to connecting with you! \n Best wishes, \n Anh Duy Dao`,
+    };
+
     await new Promise((resolve, reject) => {
       transporter.sendMail(mailOptions, function (error: any, info: any) {
+        if (error) {
+          console.log(error);
+          reject(error);
+        } else {
+          console.log("Email sent: " + info.response);
+          resolve(info);
+          // do something useful
+        }
+      });
+    });
+
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(thanksMail, function (error: any, info: any) {
         if (error) {
           console.log(error);
           reject(error);
