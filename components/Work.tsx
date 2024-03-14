@@ -17,13 +17,13 @@ import { Project } from "@/type";
 
 const projectData: Project[] = [
   {
-    image: "/work/3.png",
+    image: "/work/work1.png",
     category: "reactjs",
-    name: "Some name web",
+    name: "Flamazone",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam nesciunt nemo eligendi incidunt suscipit, doloremque perspiciatis? Et numquam iure ex aut quod id, minus nostrum mollitia veritatis minima officiis.",
-    link: "/",
-    github: "/",
+      " is a sleek e-commerce app programmed using React and Next.js, offering a seamless shopping experience akin to Amazon. Browse an extensive range of products, enjoy personalized recommendations, and shop securely with PrimePlace.",
+    link: "https://flamazone-sqk4.vercel.app/",
+    github: "https://github.com/duydao154/flamazone",
   },
   {
     image: "/work/4.png",
