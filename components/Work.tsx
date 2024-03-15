@@ -28,18 +28,16 @@ const projectData: Project[] = [
   {
     image: "/work/4.png",
     category: "DEMO",
-    name: "Some name web",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis impedit laudantium eligendi sed commodi hic. Rem ipsam porro repellat corrupti. Rerum impedit ad veritatis blanditiis beatae. Expedita magni illum rerum.",
+    name: "This is a demo Project Card",
+    description: "The project will comme soon",
     link: "",
     github: "",
   },
   {
     image: "/work/1.png",
     category: "DEMO",
-    name: "Some name web",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis impedit laudantium eligendi sed commodi hic. Rem ipsam porro repellat corrupti. Rerum impedit ad veritatis blanditiis beatae. Expedita magni illum rerum.",
+    name: "This is a demo Project Card",
+    description: "The project will comme soon",
     link: "",
     github: "",
   },
@@ -53,10 +51,9 @@ const Work = () => {
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">My Projects</h2>
           <p className="mb-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
-            eveniet quos aut reiciendis vero adipisci, molestiae eos possimus
-            amet facilis nemo, quibusdam quidem, deleniti quisquam. Facilis
-            officiis hic soluta tempora?
+            Explore some of my latest projects and endeavors. From web
+            development to creative ventures, dive into the work that fuels my
+            passion and creativity.
           </p>
           {/* <Link href="/my-projects">
             <Button

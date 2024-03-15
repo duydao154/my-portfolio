@@ -15,8 +15,9 @@ const ContactPage = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Let&apos;s Work Together</h1>
             <p className="max-w-[400px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus at sequi repudiandae.
+              Feel free to reach out to me for any inquiries, collaborations, or
+              just to say hello! You can drop me a message using the form.
+              I&apos;m always excited to hear from you!
             </p>
           </div>
           <div className="flex justify-center flex-col gap-y-4 xl:gap-y-14 mb-12 xl:mb-24 text-base xl:text-lg">

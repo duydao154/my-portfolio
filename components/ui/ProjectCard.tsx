@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <Card className=" mt-4 mb-4 group overflow-hidden relative ">
+    <Card className=" mt-4 mb-4 group overflow-hidden relative min-h-[500px] ">
       <CardHeader className="p-0">
         {/* image */}
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertirary dark:bg-secondary/40 xl:bg-inherit ">

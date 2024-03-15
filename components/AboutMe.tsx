@@ -121,7 +121,8 @@ const AboutMe2 = () => {
                 <TabsContent value="personal">
                   <div className=" text-center xl:text-left">
                     <h3 className="h3 mb-6">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Welcome to my personal corner of the web, where you can
+                      learn more about me and my passions.
                     </h3>
                     <p className="max-w-xl mx-auto xl:mx-0">
                       My fascination with technology isn&apos;t just about

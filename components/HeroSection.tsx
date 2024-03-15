@@ -28,10 +28,10 @@ const HeroSection = () => {
                   <Send className="h-4 w-4 ml-1" />{" "}
                 </Button>
               </Link>
-              <Button variant="secondary">
+              {/* <Button variant="secondary">
                 Download CV
                 <Download className="w-4 h-4 ml-1" />
-              </Button>
+              </Button>*/}
             </div>
           </div>
           <div className="hidden xl:flex relative">
