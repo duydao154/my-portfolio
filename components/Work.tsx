@@ -17,7 +17,7 @@ import { Project } from "@/type";
 
 const projectData: Project[] = [
   {
-    image: "/work/work1.png",
+    image: "/work/flamazone.png",
     category: "reactjs",
     name: "Flamazone",
     description:
@@ -26,20 +26,29 @@ const projectData: Project[] = [
     github: "https://github.com/duydao154/flamazone",
   },
   {
-    image: "/work/4.png",
-    category: "DEMO",
-    name: "This is a demo Project Card",
-    description: "The project will come soon",
+    image: "/work/SocialApp.png",
+    category: "MERN",
+    name: "Sociopedia",
+    description: "This is a social app for people to connect",
     link: "",
-    github: "",
+    github: "https://github.com/duydao154/Social-App",
   },
   {
-    image: "/work/1.png",
-    category: "DEMO",
-    name: "This is a demo Project Card",
-    description: "The project will come soon",
+    image: "/work/Uber.png",
+    category: "React Native",
+    name: "Uber Eats Clone",
+    description: "This is a clone Application of Uber Eats",
     link: "",
-    github: "",
+    github: "https://github.com/duydao154/uber-clone",
+  },
+
+  {
+    image: "/work/gym-management.jpg",
+    category: "C#",
+    name: "Gym Management",
+    description: "This Software helps Manager to manage their gym",
+    link: "",
+    github: "https://github.com/duydao154/uber-clone",
   },
 ];
 
