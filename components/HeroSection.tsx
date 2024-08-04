@@ -37,11 +37,11 @@ const HeroSection = () => {
           <div className="hidden xl:flex relative">
             <div className="bg-blob_light dark:bg-blob_dark w-[550px] h-[500px] bg-no-repeat absolute -top-1/3 -right-1/2 bg-bottom">
               <Image
-                src="/person.png"
+                src="/profilepic2.png"
                 alt="image"
-                width={400}
-                height={400}
-                className="absolute transform -translate-x-1/2 -translate-y-1/3 top-1/2 left-1/2 "
+                width={300}
+                height={300}
+                className="absolute transform -translate-x-1/2 -translate-y-1/3 top-[37%] left-[46%] "
               />
             </div>
           </div>
